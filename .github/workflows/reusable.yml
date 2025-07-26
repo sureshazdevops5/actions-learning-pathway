@@ -6,7 +6,7 @@ permissions:
  pages: write
  id-token: write
 jobs:
-   my-job:
+   reusable-job:
     # Importing a reusable workflow from another repository and branch
     uses: sureshazdevops5/actions-learning-pathway/.github/workflows/build-test-deploy.yml@main
     # Passing 'node-version' as an input parameter to the reusable workflow
