@@ -12,6 +12,7 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
+    - run: npm test
     - run: npm run build
       name: npm build
  test:
