@@ -10,7 +10,7 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '18.x'
-    - run: npm install --save-dev eslint
+    - run: npm install
       name: npm intsall
     - run: npm i @next/eslint-plugin-next
     - run: npm audit fix --force
