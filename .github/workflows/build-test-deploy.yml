@@ -1,16 +1,16 @@
 name: build test deploy
 on: push
 jobs:
-  build:
-     runs on: ubuntu-latest
-     steps: 
-      - name: checkout repo
-        uses: actions/checout@v3
-      - name: use node.js
-        uses: action/set-node@v3
-        with:
-          node-version: '18.x'
-      - run: npm install
-        name: npm intsall
-      - run: npm build
-        name: npm build
+ build:
+   runs-on: ubuntu-latest
+   steps: 
+    - name: checkout repo
+      uses: actions/checout@v3
+    - name: use node.js
+      uses: action/set-node@v3
+      with:
+        node-version: '18.x'
+    - run: npm install
+      name: npm intsall
+    - run: npm build
+      name: npm build
