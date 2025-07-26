@@ -1,0 +1,5 @@
+{
+  "extends": "next",
+  "plugins": ["@next/eslint-plugin-next"],
+  "rules": {}
+}
