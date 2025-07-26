@@ -15,6 +15,7 @@ jobs:
     - run: npm run build
       name: npm build
  test:
+   needs: build
    runs-on: ubuntu-latest
    steps: 
     - name: checkout repo
@@ -24,7 +25,7 @@ jobs:
       with:
         node-version: '18.x'
     - run: npm install --save-dev eslint@8.57.0 eslint-config-next @next/eslint-plugin-next
-    - run: npm fund
-    - run: npm test
-    - run: npm run build
-      name: npm build
+    - name: npm fund
+      run: npm fund
+    - name: npm test
+      run: npm test
