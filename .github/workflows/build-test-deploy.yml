@@ -12,7 +12,7 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
-    - run: npm install --save-dev eslint eslint-config-next @next/eslint-plugin-next
+    - run: npm install --save-dev eslint@8.57.0 eslint-config-next @next/eslint-plugin-next
     - run: npm fund
     - run: npm test
     - run: npm run build
