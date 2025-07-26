@@ -1,6 +1,10 @@
 name: resuable workflow
 on:
  workflow_dispatch:
+permissions: 
+ contents: write
+ pages: write
+ id-token: write
 jobs:
    my-job:
     # Importing a reusable workflow from another repository and branch
