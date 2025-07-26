@@ -12,6 +12,18 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
+    - run: npm run build
+      name: npm build
+ test:
+   runs-on: ubuntu-latest
+   steps: 
+    - name: checkout repo
+      uses: actions/checkout@v3
+    - name: use node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'
+    - run: npm install
     - run: npm install --save-dev eslint@8.57.0 eslint-config-next @next/eslint-plugin-next
     - run: npm fund
     - run: npm test
