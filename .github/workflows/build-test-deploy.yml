@@ -6,9 +6,9 @@ on:
      description: "node version"
      required: true
      type: string
-  push:
-   branches:
-   - main
+#  push:
+#   branches:
+#   - main
   workflow_dispatch:
 jobs:
  build:
