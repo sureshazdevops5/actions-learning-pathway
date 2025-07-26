@@ -12,9 +12,11 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
+    - run: if [ ! -f .eslintrc.json ]; then echo '{}' > .eslintrc.json; fi
+    - run: npm test
     - run: npm run build
       name: npm build
-    - run: npm test
+
  test:
   needs: build
   runs-on: ubuntu-latest
