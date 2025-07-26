@@ -1,6 +1,5 @@
 name: resuable workflow
 on:
- push:
  workflow_dispatch:
 jobs:
    my-job:
