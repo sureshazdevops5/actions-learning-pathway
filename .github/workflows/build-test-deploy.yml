@@ -13,6 +13,7 @@ jobs:
     - run: npm install --save-dev eslint
       name: npm intsall
     - run: npm i @next/eslint-plugin-next
+    - run: npm audit fix --force
     - run: npm test
     - run: npm run build
       name: npm build
