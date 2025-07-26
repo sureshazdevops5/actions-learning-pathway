@@ -12,7 +12,6 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
-    - run: npm i @next/eslint-plugin-next
     - run: npm audit fix --force
     - run: npm fund
     - run: npm test
