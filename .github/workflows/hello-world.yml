@@ -5,5 +5,5 @@ jobs:
   runs-on: ubuntu-latest
   steps:
    - name: checout repository code
-     uses: actions/checkout@3
+     uses: actions/checkout@v3
    - run: echo"$(cat hello-world.txt)
