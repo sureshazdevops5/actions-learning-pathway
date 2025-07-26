@@ -12,9 +12,9 @@ jobs:
         node-version: '18.x'
     - run: npm install
       name: npm intsall
-    - run: npm run test
     - run: npm run build
       name: npm build
+    - run: npm test
  test:
   needs: build
   runs-on: ubuntu-latest
